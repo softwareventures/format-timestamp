@@ -168,3 +168,10 @@ export function floorSeconds(timestamp: {readonly seconds: number}): string {
 export function floorSeconds2(timestamp: {readonly seconds: number}): string {
     return String(Math.floor(timestamp.seconds)).padStart(2, "0");
 }
+
+/** Rounds the seconds portion of the specified Timestamp down to the next
+ * lower millisecond, and formats the result as a 2.3-digit string. */
+export function secondsMs(timestamp: {readonly seconds: number}): string {
+    const s = String(Math.floor(timestamp.seconds * 1000)).padStart(5, "0");
+    return `${s.substr(0, 2)}.${s.substr(2)}`;
+}
