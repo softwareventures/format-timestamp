@@ -64,3 +64,7 @@ export const year = formatDate.year;
 /** Formats the year portion of the specified Timestamp as a numeric string
  * truncated to the last two digits. */
 export const shortYear = formatDate.shortYear;
+
+/** Formats the year portion of the specified Timestamp as a numeric string,
+ * zero-padded to at least four digits. */
+export const year4 = formatDate.year4;
