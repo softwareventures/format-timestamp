@@ -88,3 +88,9 @@ export const day = formatDate.day;
 /** Formats the day portion of the specified Timestamp as a 2-digit numeric
  * string. */
 export const day2 = formatDate.day2;
+
+export {DayOfWeek} from "@softwareventures/format-date";
+
+/** Formats the name of the day-of-the-week of the specified Timestamp as a
+ * string, e.g. "Monday". */
+export const dayOfWeek = formatDate.dayOfWeek;
