@@ -179,3 +179,8 @@ export function secondsMs(timestamp: {readonly seconds: number}): string {
 /** Formats the specified Timestamp as IS0 8601 extended, rounded down to the
  * next lower second e.g. 2021-05-01T11:57:23Z. */
 export const iso8601 = timestampTemplate`${year4}-${month2}-${day2}T${hours2}:${minutes2}:${floorSeconds2}Z`;
+
+/** Converts the specified Timestamp to the device's local timezone and then
+ * formats the result as ISO 8601 extended, rounded down to the next lower
+ * second, e.g. 2021-05-01T11:57:23. */
+export const deviceLocalIso8601 = deviceLocalTimestampTemplate`${year4}-${month2}-${day2}T${hours2}:${minutes2}:${floorSeconds2}`;
