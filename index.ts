@@ -100,3 +100,9 @@ export const dayOfWeek = formatDate.dayOfWeek;
 export function hours(timestamp: {readonly hours: number}): string {
     return String(timestamp.hours);
 }
+
+/** Formats the hours portion of the specified Timestamp as a 2-digit 24-hour
+ * numeric string. */
+export function hours2(timestamp: {readonly hours: number}): string {
+    return String(timestamp.hours).padStart(2, "0");
+}
