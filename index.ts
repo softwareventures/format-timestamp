@@ -110,5 +110,11 @@ export function hours2(timestamp: {readonly hours: number}): string {
 /** Formats the hours portion of the specified Timestamp as a 12-hour numeric
  * string. */
 export function hours12(timestamp: {readonly hours: number}): string {
-    return String((12 + timestamp.hours % 12) % 12);
+    return String((12 + (timestamp.hours % 12)) % 12);
+}
+
+/** Formats the hours portion of the specified Timestamp as a 2-digit 12-hour
+ * numeric string. */
+export function hours122(timestamp: {readonly hours: number}): string {
+    return String((12 + (timestamp.hours % 12)) % 12).padStart(2, "0");
 }
