@@ -162,3 +162,9 @@ export function seconds2(timestamp: {readonly seconds: number}): string {
 export function floorSeconds(timestamp: {readonly seconds: number}): string {
     return String(Math.floor(timestamp.seconds));
 }
+
+/** Rounds the seconds portion of the specified Timestamp down and formats
+ * the result as a 2-digit numeric string. */
+export function floorSeconds2(timestamp: {readonly seconds: number}): string {
+    return String(Math.floor(timestamp.seconds)).padStart(2, "0");
+}
