@@ -118,3 +118,10 @@ export function hours12(timestamp: {readonly hours: number}): string {
 export function hours122(timestamp: {readonly hours: number}): string {
     return String((12 + (timestamp.hours % 12)) % 12).padStart(2, "0");
 }
+
+export type AmPm = "AM" | "PM";
+
+/** Returns "AM" or "PM" depending on the hour of the specified Timestamp. */
+export function amPm(timestamp: {readonly hours: number}): AmPm {
+    return timestamp.hours < 12 ? "AM" : "PM";
+}
