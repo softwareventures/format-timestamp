@@ -125,3 +125,9 @@ export type AmPm = "AM" | "PM";
 export function amPm(timestamp: {readonly hours: number}): AmPm {
     return timestamp.hours < 12 ? "AM" : "PM";
 }
+
+/** Formats the minutes portion of the specified Timestamp as a numeric
+ * string. */
+export function minutes(timestamp: {readonly minutes: number}): string {
+    return String(timestamp.minutes);
+}
