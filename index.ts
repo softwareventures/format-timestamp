@@ -60,3 +60,7 @@ export function deviceLocalTimestampTemplate(
 
 /** Formats the year portion of the specified Timestamp as a numeric string. */
 export const year = formatDate.year;
+
+/** Formats the year portion of the specified Timestamp as a numeric string
+ * truncated to the last two digits. */
+export const shortYear = formatDate.shortYear;
