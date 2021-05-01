@@ -1,5 +1,6 @@
 import {concatMap} from "@softwareventures/array";
 import {normalize, Timestamp} from "@softwareventures/timestamp";
+import * as formatDate from "@softwareventures/format-date";
 import {JsDate} from "./js-date";
 
 /** A function that formats a Timestamp or part of a Timestamp as a string. */
@@ -56,3 +57,6 @@ export function deviceLocalTimestampTemplate(
         return concatMap(texts, (text, i) => [text, formatters[i]?.(local)]).join("");
     };
 }
+
+/** Formats the year portion of the specified Timestamp as a numeric string. */
+export const year = formatDate.year;

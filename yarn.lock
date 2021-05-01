@@ -472,6 +472,15 @@
     tslib "^1.11.2 || ^2.0.0"
     tslint "^6.1.2"
 
+"@softwareventures/format-date@^1.0.0-alpha.1":
+  version "1.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@softwareventures/format-date/-/format-date-1.0.0-alpha.1.tgz#c2de76ed42af9945ca6316ce41c0ba917243aba1"
+  integrity sha512-pdfROwSd6upPbPlkrThMGGA3UUUQzA8z3XiHtbC4bcsez3TD5EL4IQ1nLg1iKfOVmvxcxnnP2IiEu2LAwYxIpA==
+  dependencies:
+    "@softwareventures/array" "^3.10.0"
+    "@softwareventures/date" "^1.4.2"
+    tslib "2.2.0"
+
 "@softwareventures/iterable@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@softwareventures/iterable/-/iterable-1.1.2.tgz#5aa20ee3ff5272e16a12eee8b922d90e5ef5f07b"
