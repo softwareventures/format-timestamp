@@ -75,3 +75,9 @@ export const month = formatDate.month;
 /** Formats the month portion of the specified Timestamp as a 2-digit numeric
  * string. */
 export const month2 = formatDate.month2;
+
+export {MonthName} from "@softwareventures/format-date";
+
+/** Formats the name of the month portion of the specified Timestamp as a
+ * string, e.g. `"January"`. */
+export const monthName = formatDate.monthName;
