@@ -131,3 +131,9 @@ export function amPm(timestamp: {readonly hours: number}): AmPm {
 export function minutes(timestamp: {readonly minutes: number}): string {
     return String(timestamp.minutes);
 }
+
+/** Formats the minutes portion of the specified Timestamp as a 2-digit
+ * numeric string. */
+export function minutes2(timestamp: {readonly minutes: number}): string {
+    return String(timestamp.minutes).padStart(2, "0");
+}
