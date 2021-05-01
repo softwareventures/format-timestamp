@@ -84,3 +84,7 @@ export const monthName = formatDate.monthName;
 
 /** Formats the day portion of the specified Timestamp as a numeric string. */
 export const day = formatDate.day;
+
+/** Formats the day portion of the specified Timestamp as a 2-digit numeric
+ * string. */
+export const day2 = formatDate.day2;
