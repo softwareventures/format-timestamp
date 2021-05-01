@@ -175,3 +175,7 @@ export function secondsMs(timestamp: {readonly seconds: number}): string {
     const s = String(Math.floor(timestamp.seconds * 1000)).padStart(5, "0");
     return `${s.substr(0, 2)}.${s.substr(2)}`;
 }
+
+/** Formats the specified Timestamp as IS0 8601 extended, rounded down to the
+ * next lower second e.g. 2021-05-01T11:57:23Z. */
+export const iso8601 = timestampTemplate`${year4}-${month2}-${day2}T${hours2}:${minutes2}:${floorSeconds2}Z`;
