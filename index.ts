@@ -137,3 +137,12 @@ export function minutes(timestamp: {readonly minutes: number}): string {
 export function minutes2(timestamp: {readonly minutes: number}): string {
     return String(timestamp.minutes).padStart(2, "0");
 }
+
+/** Formats the seconds portion of the specified Timestamp as a numeric
+ * string.
+ *
+ * Note that fractional seconds will not be rounded, so this might produce
+ * a result similar to `"2.234"` */
+export function seconds(timestamp: {readonly seconds: number}): string {
+    return String(timestamp.seconds);
+}
