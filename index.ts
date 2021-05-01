@@ -94,3 +94,9 @@ export {DayOfWeek} from "@softwareventures/format-date";
 /** Formats the name of the day-of-the-week of the specified Timestamp as a
  * string, e.g. "Monday". */
 export const dayOfWeek = formatDate.dayOfWeek;
+
+/** Formats the hours portion of the specified Timestamp as a 24-hour numeric
+ * string. */
+export function hours(timestamp: {readonly hours: number}): string {
+    return String(timestamp.hours);
+}
