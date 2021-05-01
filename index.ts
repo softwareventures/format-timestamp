@@ -71,3 +71,7 @@ export const year4 = formatDate.year4;
 
 /** Formats the month portion of the specified Timestamp as a numeric string. */
 export const month = formatDate.month;
+
+/** Formats the month portion of the specified Timestamp as a 2-digit numeric
+ * string. */
+export const month2 = formatDate.month2;
