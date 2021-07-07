@@ -23,6 +23,9 @@
     "semantic-release": "semantic-release",
     "test": "ava"
   },
+  "engines": {
+    "node": "^12 || ^14 || >=16"
+  },
   "dependencies": {
     "@softwareventures/array": "^3.10.0",
     "@softwareventures/format-date": "^1.0.0-alpha.1",
