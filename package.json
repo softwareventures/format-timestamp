@@ -28,7 +28,7 @@
     "@softwareventures/array": "^3.10.0",
     "@softwareventures/format-date": "^1.0.0-alpha.1",
     "@softwareventures/timestamp": "^1.0.0-alpha.4",
-    "tslib": "2.3.0"
+    "tslib": "2.3.1"
   },
   "devDependencies": {
     "@softwareventures/eslint-config": "3.6.3",
