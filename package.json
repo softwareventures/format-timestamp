@@ -27,7 +27,7 @@
     "node": "^12 || ^14 || >=16"
   },
   "dependencies": {
-    "@softwareventures/array": "^3.10.0 || ^4.0.0",
+    "@softwareventures/array": "^3.10.0 || ^4.0.0 || ^5.0.0",
     "@softwareventures/format-date": "^1.0.0-alpha.1",
     "@softwareventures/timestamp": "^1.0.0-alpha.4",
     "tslib": "2.3.1"
