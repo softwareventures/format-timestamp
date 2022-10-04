@@ -1,5 +1,6 @@
 import {concatMap} from "@softwareventures/array";
-import {normalize, Timestamp} from "@softwareventures/timestamp";
+import type {Timestamp} from "@softwareventures/timestamp";
+import {normalize} from "@softwareventures/timestamp";
 import * as formatDate from "@softwareventures/format-date";
 import {JsDate} from "./js-date";
 
@@ -154,7 +155,7 @@ export function seconds(timestamp: {readonly seconds: number}): string {
  * Note that fractional seconds will not be rounded, so this might produce
  * a result similar to `"02.234"`. */
 export function seconds2(timestamp: {readonly seconds: number}): string {
-    return String(timestamp.seconds).replace(/^\d+/, s => s.padStart(2, "0"));
+    return String(timestamp.seconds).replace(/^\d+/u, s => s.padStart(2, "0"));
 }
 
 /** Rounds the seconds portion of the specified Timestamp down and formats
