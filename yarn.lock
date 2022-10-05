@@ -632,7 +632,7 @@
   dependencies:
     tslib "^1.9.3 || ^2.0.0 || ^2.1.0"
 
-"@softwareventures/ordered@^0.2.0 || ^1.0.0", "@softwareventures/ordered@^0.2.1 || ^1.0.0", "@softwareventures/ordered@^0.2.2 || ^1.0.0":
+"@softwareventures/ordered@^0.2.0 || ^1.0.0", "@softwareventures/ordered@^0.2.1 || ^1.0.0", "@softwareventures/ordered@^0.2.2 || ^1.0.0", "@softwareventures/ordered@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@softwareventures/ordered/-/ordered-1.0.0.tgz#d803eef43bb0b4ccfcd78d2928fe38b5109ad99e"
   integrity sha512-SUFUYDWEPAS54LpGH+mRHwkGuTINPDt4OOS3h/Zr9f12JPFz2cqh6Xxwg75BZqwaeONuUwmklJVMRmgvxSSkPA==
@@ -663,6 +663,32 @@
     is-integer "1.0.7"
     is-integer-in-range "^1.0.0 || ^2.0.0"
     tslib "^1.9.3 || ^2.0.0 || ^2.1.0"
+
+"@softwareventures/time@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/time/-/time-1.0.0.tgz#b1b16c5b27ef7d54a9521206a839c313ad7221c4"
+  integrity sha512-914SUFpVoTP3ODxkajpCbNiw3zE30GqjmMZe9RpvpwRIixKp8F/r8BD/vejTLQJKOsffBt8RuOkPN1+Xv+QBmQ==
+  dependencies:
+    "@softwareventures/ordered" "^1.0.0"
+    "@types/is-integer" "1.0.0"
+    is-integer "^1.0.7"
+    is-integer-in-range "^3.0.1"
+    tslib "^1.9.3 || ^2.0.0 || ^2.1.0"
+    unknown "^0.2.5"
+
+"@softwareventures/timestamp@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/timestamp/-/timestamp-1.0.0.tgz#5b4a7d83437c42e28fae19b22dabeedae4ba771e"
+  integrity sha512-MB//YqP3qbcmMl3cip95l32npUUUcmMV0SBk8DdeMkm9VmAfQU7SnRvJHv6NkmeghoNqZ+YzlOJJqURxmganrQ==
+  dependencies:
+    "@softwareventures/date" "^1.4.2 || ^2.0.0"
+    "@softwareventures/format-timestamp" "^1.0.0-alpha.1"
+    "@softwareventures/iterable" "^1.1.2 || ^2.0.0"
+    "@softwareventures/nullable" "^1.3.1 || ^2.0.0"
+    "@softwareventures/ordered" "^0.2.2 || ^1.0.0"
+    "@softwareventures/time" "^1.0.0"
+    tslib "2.4.0"
+    unknown "^0.2.5"
 
 "@softwareventures/timestamp@^1.0.0-alpha.4":
   version "1.0.0-alpha.12"
@@ -3067,7 +3093,7 @@ is-glob@^4.0.0, is-glob@^4.0.1, is-glob@^4.0.3, is-glob@~4.0.1:
     is-integer "^1.0.7"
     tslib "2.3.0"
 
-"is-integer-in-range@^1.0.0 || ^2.0.0 || ^3.0.0":
+"is-integer-in-range@^1.0.0 || ^2.0.0 || ^3.0.0", is-integer-in-range@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/is-integer-in-range/-/is-integer-in-range-3.0.1.tgz#3572cff0d316a9c56478c249619a635721883fc8"
   integrity sha512-TxxzQQXksIbn8ORDgi1Rm5swhVx2F3iMg+SXCTYMfs4MsaR9n6tOGNjH5zYwRqkQcSilOMkDOrgiEzqrn/eZZw==
@@ -5605,6 +5631,11 @@ universalify@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
+
+unknown@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/unknown/-/unknown-0.2.5.tgz#673a9bd591fa5ac3bbc56531e68fb6e7cef91c98"
+  integrity sha512-DzDwBz0BF7SZnzfiw6RmESjDKRpJv97kZkcb52xifBGR2CNgvra2DIlhgEXiHJeNOamYHapcPTxam8ff5x+2YA==
 
 uri-js@^4.2.2:
   version "4.4.1"
