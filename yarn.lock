@@ -696,12 +696,12 @@
     tslib "^2.6.2"
 
 "@softwareventures/format-time@^1.0.0":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@softwareventures/format-time/-/format-time-1.0.1.tgz#3bd0a483eedbe06159a21ea5f8d15080aaca41cf"
-  integrity sha512-IRD8Uyv2lYce/tcFY5mUah6jsG14YfkHYfD6ROEvwk++gaLuQlHaZoEYzgUFWp/tnhDe1b8DpU6dUhRYSZ2JYA==
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/format-time/-/format-time-1.0.0.tgz#5fa0431320a9baba2fdf014263dee712968ed125"
+  integrity sha512-2jeoP5imm+jlMBS51b5Lyu7Ca9YBeEoqYd+xJlkoJEdg5gkKvV3+Cg8XX1FXRkrvhl5GBGpK59L0VN5pvBqr5w==
   dependencies:
     "@softwareventures/array" "^7.0.0"
-    "@softwareventures/time" "^2.0.0 || ^3.0.0"
+    "@softwareventures/time" "^2.0.0"
     tslib "^2.5.0"
 
 "@softwareventures/format-timestamp@^1.0.0":
@@ -743,7 +743,7 @@
   dependencies:
     tslib "2.6.2"
 
-"@softwareventures/time@^1.0.0 || ^2.0.0 || ^3.0.0", "@softwareventures/time@^2.0.0 || ^3.0.0":
+"@softwareventures/time@^1.0.0 || ^2.0.0 || ^3.0.0":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@softwareventures/time/-/time-3.1.1.tgz#38134c2ae4bd9b124aa7cae6800e92fbad3c57af"
   integrity sha512-ZMi4/upMM7HavvNeOzbROAS6yicNFsqqdRRth79AA2hR8RdSu0StTRM8y2FOyC2d9SPzzqS8B1f7JOSnvrJgRw==
@@ -755,6 +755,19 @@
     is-integer "^1.0.7"
     is-integer-in-range "^3.0.1 || ^4.0.0"
     tslib "^2.1.0"
+    unknown "^0.2.5"
+
+"@softwareventures/time@^2.0.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/time/-/time-2.1.0.tgz#53ee6d27b33242a2f5a6dfbeb1bc892fe404930a"
+  integrity sha512-jL/9cUZTIcEu2dC0ZKslxYU5QMipnRdd0i0olIDDYpVPB4T0vSfRvfpmErx6HOR4fnzk4B+9/kWPS1MRAMrRPw==
+  dependencies:
+    "@softwareventures/nullable" "^3.2.0"
+    "@softwareventures/ordered" "^1.0.0 || ^2.0.0"
+    "@types/is-integer" "1.0.2"
+    is-integer "^1.0.7"
+    is-integer-in-range "^3.0.1 || ^4.0.0"
+    tslib "^1.9.3 || ^2.0.0 || ^2.1.0"
     unknown "^0.2.5"
 
 "@softwareventures/timestamp@^1.0.0 || ^2.0.0":
