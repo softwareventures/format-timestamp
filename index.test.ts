@@ -1,14 +1,6 @@
 import test from "ava";
 import {timestamp} from "@softwareventures/timestamp";
-import {iso8601, secondsMs} from "./index";
-
-test("secondsMs", t => {
-    t.is(secondsMs({seconds: 0.001}), "00.001");
-    t.is(secondsMs({seconds: 1}), "01.000");
-    t.is(secondsMs({seconds: 1.0012}), "01.001");
-    t.is(secondsMs({seconds: 1.0018}), "01.001");
-    t.is(secondsMs({seconds: 22.0018}), "22.001");
-});
+import {iso8601} from "./index";
 
 test("iso8601", t => {
     t.is(

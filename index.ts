@@ -2,6 +2,7 @@ import {concatMap} from "@softwareventures/array";
 import type {Timestamp} from "@softwareventures/timestamp";
 import {normalize} from "@softwareventures/timestamp";
 import * as formatDate from "@softwareventures/format-date";
+import * as formatTime from "@softwareventures/format-time";
 import {JsDate} from "./js-date";
 
 /** A function that formats a {@link Timestamp} or part of a {@link Timestamp}
@@ -102,56 +103,40 @@ export const dayOfWeek = formatDate.dayOfWeek;
 
 /** Formats the hours portion of the specified {@link Timestamp} as a 24-hour
  * numeric string. */
-export function hours(timestamp: {readonly hours: number}): string {
-    return String(timestamp.hours);
-}
+export const hours = formatTime.hours;
 
 /** Formats the hours portion of the specified {@link Timestamp} as a 2-digit
  * 24-hour numeric string. */
-export function hours2(timestamp: {readonly hours: number}): string {
-    return String(timestamp.hours).padStart(2, "0");
-}
+export const hours2 = formatTime.hours2;
 
 /** Formats the hours portion of the specified {@link Timestamp} as a 12-hour
  * numeric string. */
-export function hours12(timestamp: {readonly hours: number}): string {
-    return String((12 + (timestamp.hours % 12)) % 12);
-}
+export const hours12 = formatTime.hours12;
 
 /** Formats the hours portion of the specified {@link Timestamp} as a 2-digit
  * 12-hour numeric string. */
-export function hours122(timestamp: {readonly hours: number}): string {
-    return String((12 + (timestamp.hours % 12)) % 12).padStart(2, "0");
-}
+export const hours122 = formatTime.hours122;
 
-export type AmPm = "AM" | "PM";
+export {AmPm} from "@softwareventures/format-time";
 
 /** Returns `"AM"` or `"PM"` depending on the hour of the specified
  * {@link Timestamp}. */
-export function amPm(timestamp: {readonly hours: number}): AmPm {
-    return timestamp.hours < 12 ? "AM" : "PM";
-}
+export const amPm = formatTime.amPm;
 
 /** Formats the minutes portion of the specified {@link Timestamp} as a
  * numeric string. */
-export function minutes(timestamp: {readonly minutes: number}): string {
-    return String(timestamp.minutes);
-}
+export const minutes = formatTime.minutes;
 
 /** Formats the minutes portion of the specified {@link Timestamp} as a
  * 2-digit numeric string. */
-export function minutes2(timestamp: {readonly minutes: number}): string {
-    return String(timestamp.minutes).padStart(2, "0");
-}
+export const minutes2 = formatTime.minutes2;
 
 /** Formats the seconds portion of the specified {@link Timestamp} as a
  * numeric string.
  *
  * Note that fractional seconds will not be rounded, so this might produce
  * a result similar to `"2.234"` */
-export function seconds(timestamp: {readonly seconds: number}): string {
-    return String(timestamp.seconds);
-}
+export const seconds = formatTime.seconds;
 
 /** Formats the seconds portion of the specified {@link Timestamp} as a
  * numeric string. If necessary, adds a leading zero to the whole part of the
@@ -159,28 +144,19 @@ export function seconds(timestamp: {readonly seconds: number}): string {
  *
  * Note that fractional seconds will not be rounded, so this might produce
  * a result similar to `"02.234"`. */
-export function seconds2(timestamp: {readonly seconds: number}): string {
-    return String(timestamp.seconds).replace(/^\d+/u, s => s.padStart(2, "0"));
-}
+export const seconds2 = formatTime.seconds2;
 
 /** Rounds the seconds portion of the specified {@link Timestamp} down and
  * formats the result as a numeric string. */
-export function floorSeconds(timestamp: {readonly seconds: number}): string {
-    return String(Math.floor(timestamp.seconds));
-}
+export const floorSeconds = formatTime.floorSeconds;
 
 /** Rounds the seconds portion of the specified {@link Timestamp} down and
  * formats the result as a 2-digit numeric string. */
-export function floorSeconds2(timestamp: {readonly seconds: number}): string {
-    return String(Math.floor(timestamp.seconds)).padStart(2, "0");
-}
+export const floorSeconds2 = formatTime.floorSeconds2;
 
 /** Rounds the seconds portion of the specified {@link Timestamp} down to the
  * next lower millisecond, and formats the result as a 2.3-digit string. */
-export function secondsMs(timestamp: {readonly seconds: number}): string {
-    const s = String(Math.floor(timestamp.seconds * 1000)).padStart(5, "0");
-    return `${s.substr(0, 2)}.${s.substr(2)}`;
-}
+export const secondsMs = formatTime.secondsMs;
 
 /** Formats the specified {@link Timestamp} as IS0 8601 extended, rounded down
  * to the next lower second e.g. `"2021-05-01T11:57:23Z"`. */
