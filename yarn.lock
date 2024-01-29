@@ -640,10 +640,10 @@
     is-integer-in-range "^1.0.0 || ^2.0.0 || ^3.0.0 || ^4.0.0"
     tslib "^1.9.3 || ^2.0.0 || ^2.1.0"
 
-"@softwareventures/eslint-config@7.1.5":
-  version "7.1.5"
-  resolved "https://registry.yarnpkg.com/@softwareventures/eslint-config/-/eslint-config-7.1.5.tgz#41434554f1d22c6b43c9dedb4f5ef721be7da90b"
-  integrity sha512-ci1R9YCtD76kobw/W88J2UGN6tZ1wPqWu1eWqdeMKqjdb8u6BeFbulb61tyiUwW49mTvvQe7cM+AnyVxc/Gh2Q==
+"@softwareventures/eslint-config@7.2.0":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/eslint-config/-/eslint-config-7.2.0.tgz#66d1075e582fcd1093ac5ed296d1c3f9b8b83525"
+  integrity sha512-9KN79gya+RzISEDivqQi5BeaKIMTYUQuLF+ZE+aaLRaQlGDul49hZYGbkordNbvMGEJPrObbebAJNYYTZhkPWg==
   dependencies:
     tslib "^2.3.1"
 
@@ -713,19 +713,7 @@
   dependencies:
     tslib "2.6.2"
 
-"@softwareventures/time@^1.0.0 || ^2.0.0":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@softwareventures/time/-/time-2.0.2.tgz#dcfc58b5a3624612f036d27babdc612260abed1e"
-  integrity sha512-FjQA+JMb33x6CoZhTBqAYFkEEuoFss7kaUr8Mynl4oheflF6V00EAwH+thFDfauJb1Z6ILEzmp0hUWbC6hI0Xg==
-  dependencies:
-    "@softwareventures/ordered" "^1.0.0 || ^2.0.0"
-    "@types/is-integer" "1.0.0"
-    is-integer "^1.0.7"
-    is-integer-in-range "^3.0.1 || ^4.0.0"
-    tslib "^1.9.3 || ^2.0.0 || ^2.1.0"
-    unknown "^0.2.5"
-
-"@softwareventures/time@^2.0.0":
+"@softwareventures/time@^1.0.0 || ^2.0.0", "@softwareventures/time@^2.0.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@softwareventures/time/-/time-2.1.0.tgz#53ee6d27b33242a2f5a6dfbeb1bc892fe404930a"
   integrity sha512-jL/9cUZTIcEu2dC0ZKslxYU5QMipnRdd0i0olIDDYpVPB4T0vSfRvfpmErx6HOR4fnzk4B+9/kWPS1MRAMrRPw==
